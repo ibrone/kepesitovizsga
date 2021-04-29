@@ -6,10 +6,10 @@ public class MilitaryUnit {
     int damage;
     boolean shield;
 
-    public MilitaryUnit(int health, int damage, boolean shield) {
-        this.health = health;
-        this.damage = damage;
-        this.shield = shield;
+    public MilitaryUnit(int health,int damage, boolean shield) {
+       this.health = health;
+       this.damage = damage;
+       shield = shield;
     }
 
 
@@ -18,13 +18,17 @@ public class MilitaryUnit {
     }
 
     public void sufferDamage(int damage){
-        if (shield = true){
+        if (shield == true){
             health = health - damage/2;
         }
         else
             health = health - damage;
-
+return;
     }
 
 
+    public int getHitPoints() {
+        sufferDamage(damage);
+        return health;
+    }
 }

@@ -18,14 +18,14 @@ class MilitaryUnitTest {
         assertEquals(30, archer.getHitPoints());
     }
 
-//    @Test
-//    void testHeavyCavalry() {
-//        HeavyCavalry heavyCavalry = new HeavyCavalry();
+    @Test
+    void testHeavyCavalry() {
+        HeavyCavalry heavyCavalry = new HeavyCavalry();
 //        assertEquals(60, heavyCavalry.doDamage());
-//        assertEquals(20, heavyCavalry.doDamage());
-//        heavyCavalry.sufferDamage(20);
-//        assertEquals(140, heavyCavalry.getHitPoints());
-//    }
+        assertEquals(20, heavyCavalry.doDamage());
+        heavyCavalry.sufferDamage(20);
+        assertEquals(140, heavyCavalry.getHitPoints());
+    }
 //
 //    @Test
 //    void testSwordsmanArmored() {
